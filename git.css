@@ -1,0 +1,168 @@
+body {
+  font-family: "Helvetica";
+  background-image: url(bg.jpeg);
+  background-size: cover;
+  background-color: #0d1117;
+  color: #c9d2d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 3rem;
+}
+
+.header {
+  margin: 40px 0 40px 0;
+}
+
+.header__avatar {
+  border-radius: 50%;
+  width: 500px;
+
+}
+
+.header__title {
+  margin: 30px 0 10px 0;
+  font-size: 32px;
+  line-height: 1.2;
+  font-family: "Comic Sans MS";
+  
+}
+
+.header__subtitle {
+  color: #8b949f;
+  font-size: 16px;
+  line-height: 1.4;
+  
+}
+
+.links {
+  width: 650px;
+  margin-bottom: 40px;
+}
+
+.links__header {
+  font-family: "Comic Sans MS";
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+.links__container {
+  list-style-type: none;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px 10px;
+  gap: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.links__link,
+.links__title {
+  font-size: 14px;
+  font-size: 1.4;
+}
+
+.links__link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 0px 10px;
+  gap: 30px;
+  border-bottom: 1px solid #22262d;
+  width: 600px;
+}
+
+.links__link:last-child {
+  border-bottom: none;
+}
+
+.linsk__link,
+.links__link:visited {
+  text-decoration: none;
+  color: #58a5fe;
+}
+
+.links__title {
+  margin: 0;
+  min-width: 400px;
+}
+
+footer {
+  margin: 0 0 40px 0;
+}
+.button-link {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 320px;
+  background: #20262e;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: #c9d2d9;
+  text-decoration: none;
+}
+
+
+.hello-window span{
+    border-radius: 5px 5px 5px 5px;
+    visibility: hidden;
+    position: absolute;
+    left: 700px;
+    top: 1200px;
+ 
+    box-shadow: -2px 2px -1px -1px #333; 
+    border-radius: 5px; 
+}
+ 
+.hello-window:hover span{
+visibility: visible;
+}
+
+
+
+button:hover {
+ background: rgba(0,0,0,0);
+ color: red; 
+}
+
+#random-phrase {
+  margin: 1px auto;
+  position: absolute;
+  padding: 15px;
+  font-size: 1.3em;
+  font-style: italic;
+  border: 1px solid #ddd;
+}
+
+#random-phrase #phrase {
+  text-align: left;
+}
+
+#random-phrase #author {
+  text-align: right;
+}
+
+#next-quote {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+}
+
+
+
