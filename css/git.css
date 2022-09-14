@@ -1,0 +1,350 @@
+body {
+  font-family: "Helvetica";
+  background-color: #000000;
+  color: #c9d2d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+        
+}
+
+.header {
+  text-align: center;
+  margin: 40px 0px 40px 0px;
+}
+
+.header__avatar {
+  border-radius: 50%;
+  width: 25%;
+}
+
+.header__avatar:hover{
+  border-color: #58a5fe;
+  box-shadow: 0 0 10px #58a5fe;
+}
+
+
+.header__title {
+  margin: 30px 0 10px 0;
+  font-size: 30px;
+  line-height: 1.4;
+  font-family: "Comic Sans MS";
+  
+}
+
+.header__subtitle {
+  color: #8b949f;
+  font-size: 16px;
+  line-height: 1.4;
+  
+}
+
+.links {
+  width: 720px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.links__header {
+  font-family: "Comic Sans MS";
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+
+
+}
+
+.links__container {
+  list-style-type: none;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px 10px;
+  gap: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.75);
+
+}
+
+
+
+.links__title {
+  font-size: 14px;
+
+}
+
+.links__link {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 0px 10px;
+  gap: 30px;
+  border-bottom: 1px solid #22262d;
+  width: 100%;
+}
+.linsk__link,
+.links__link:last-child {
+  border-bottom: none;
+}
+
+.linsk__link,
+.links__link:visited {
+  text-decoration: none;
+  color: #58a5fe;
+}
+
+.linsk__link:hover{
+  color: #c9d2d9;
+}
+.links__title {
+  margin: 0;
+  min-width: 450px;
+}
+
+
+
+
+@media  (max-width: 720px) {
+body {
+  background-image: url(./img/bg3.jpg);      
+}
+
+  .links {
+    width: 90%;
+
+  }
+  .links__title {
+  margin: 0;
+  min-width: 300px;
+
+}
+.links__link {
+  display: grid;
+  grid-template-columns: 30% 70%;}
+.header__avatar {
+  border-radius: 50%;
+  width: 75%;
+}
+.links__container {
+  hyphens: auto;
+
+width: 100%;
+}
+
+}
+
+footer {
+  margin: 0 0 40px 0;
+
+
+}
+.button-link {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 320px;
+  background: #20262e;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: #c9d2d9;
+  text-decoration: none;
+
+}
+
+
+
+button:hover {
+ background: rgba(0,0,0,0);
+ color: red; 
+}
+
+#random-phrase {
+  margin: 1px auto;
+  position: absolute;
+  padding: 15px;
+  font-size: 1.3em;
+  font-style: italic;
+  border: 1px solid #ddd;
+}
+
+#random-phrase #phrase {
+  text-align: left;
+}
+
+#random-phrase #author {
+  text-align: right;
+}
+
+#next-quote {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
